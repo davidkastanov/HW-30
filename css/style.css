@@ -1,0 +1,73 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+    animation-name: move-box;
+    animation-duration: 3000ms;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-delay: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move-box {
+    0% {
+        transform: translate(0);
+        background-color: cornflowerblue;
+    }
+    25% {
+        transform: translate(400px);
+        background-color: khaki;
+    }
+    50% {
+        transform: translate(800px);
+        background-color: midnightblue;
+    }
+    75% {
+        transform: translate(1200px);
+        background-color: lightgray;
+    }
+    100% {
+        transform: translate(1600px);
+        background-color: paleturquoise;
+    }
+} */
+
+.container {
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    animation-name: quadrat-box;
+    animation-duration: 3000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes quadrat-box {
+    0% {
+        transform: translate(10px) rotate(0deg) skew;
+        background-color: red;
+    }
+    25% {
+        transform: translate(890px, 10px) rotate(90deg);
+        background-color: blue;
+    }
+    50% {
+        transform: translate(890px, 890px) rotate(-90deg);
+        background-color: green;
+    }
+    75% {
+        transform: translate(10px, 890px) rotate(90deg);
+        background-color: yellow;
+    }
+    100% {
+        transform: translate(10px, 10px) rotate(-90deg);
+        background-color: lightgreen;
+    }
+}
